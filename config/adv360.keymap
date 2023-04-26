@@ -39,21 +39,21 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none   &none   &none   &none               &none                                                                                &mo 3   &none   &none      &none    &none             &none   &none
-  &none   &kp Q   &kp D   &kp R   &kp W   &kp B               &none                                                                                &none   &kp J   &kp F      &kp U    &kp P  &kp SINGLE_QUOTE   &none
-    &mo   &kp A   &kp S   &kp H   &kp T   &kp G               &none  &kp DELETE      &kp LEFT_ALT   &none   &none      &kp RIGHT_ALT    &none      &none   &kp Y   &kp N      &kp E    &kp O             &kp I   &none
-  &none   &kp Z   &kp X   &kp M   &kp C   &kp V               &none       &none  &kp LEFT_CONTROL   &none   &none  &kp RIGHT_CONTROL    &none      &none   &kp K   &kp L  &kp COMMA  &kp DOT      &kp QUESTION   &none
-  &mo 2   &mo 5   &none   &mo 1   &mo 4                    &kp BSPC   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE           &mo 4      &mo 1    &none             &mo 5   &mo 2
+  &none             &none   &none         &none             &none   &none               &mo 2                                                           &mo 3   &none              &none          &none    &none              &none      &none
+  &none             &kp Q   &kp D         &kp R             &kp W   &kp B            &kp CAPS                                                           &none   &kp J              &kp F          &kp U    &kp P   &kp SINGLE_QUOTE  &kp GRAVE
+  &mo 4             &kp A   &kp S         &kp H             &kp T   &kp G               &none  &kp DELETE   &none   &none   &none   &none    &none      &none   &kp Y              &kp N          &kp E    &kp O              &kp I      &mo 4
+  &mo 2             &kp Z   &kp X         &kp M             &kp C   &kp V               &none       &none   &none   &none   &none   &none    &none      &none   &kp K              &kp L      &kp COMMA  &kp DOT       &kp QUESTION      &mo 2
+  &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                    &kp BSPC   &kp ENTER   &mo 5                   &mo 2  &kp TAB  &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL      &none
             >;
         };
 
         layer_keypad {
             bindings = <
-  &none     &none      &none         &none          &none   &none              &trans                                                                                &mo 3   &none      &none      &none       &none      &none   &none
-  &none     &none      &none         &none          &none   &none               &none                                                                                &none   &none  &kp KP_N7  &kp KP_N8   &kp KP_N9      &none   &none
-  &none  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp KP_DIVIDE   &none               &none  &kp DELETE      &kp LEFT_ALT   &none   &none      &kp RIGHT_ALT    &none      &none   &none  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp EQUAL   &none
-  &none     &none      &none         &none          &none   &none               &none       &none  &kp LEFT_CONTROL   &none   &none  &kp RIGHT_CONTROL    &none      &none   &none  &kp KP_N1  &kp KP_N2   &kp KP_N3      &none   &none
-  &none     &none      &none         &none          &none                    &kp BSPC   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE          &kp KP_N0      &none  &kp KP_DOT      &none   &none
+  &none            &none            &none            &none            &none            &none              &trans                                                           &mo 3            &none            &none            &none            &none            &none   &none
+  &none            &none         &kp PLUS        &kp MINUS            &none            &none               &none                                                           &none            &none            &none     &kp ASTERISK     &kp KP_SLASH            &none   &none
+  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5               &none  &kp DELETE   &none   &none   &none   &none    &none      &none  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0   &none
+  &none            &none            &none         &kp HASH       &kp DOLLAR            &none               &none       &none   &none   &none   &none   &none    &none      &none            &none      &kp PERCENT            &none            &none            &none   &none
+  &none            &none            &none            &none            &none                             &kp BSPC   &kp ENTER   &none                   &none  &kp TAB  &kp SPACE                         &kp KP_N0            &none       &kp KP_DOT            &none   &none
             >;
         };
 
@@ -89,11 +89,11 @@
 
         layer_Layer__5 {
             bindings = <
-         &trans  &trans          &trans     &trans     &trans  &trans                   &trans                                                                               &trans          &trans          &trans        &trans           &trans      &trans           &trans
-         &trans  &trans          &trans     &trans     &trans  &trans                   &trans                                                                               &trans          &trans          &trans        &trans           &trans      &trans           &trans
- &kp LEFT_SHIFT   &none  &kp UNDERSCORE  &kp MINUS  &kp TILDE  &trans                   &trans  &kp DELETE      &kp LEFT_ALT  &trans  &trans      &kp RIGHT_ALT    &none     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE  &kp RIGHT_SHIFT
-         &trans  &trans   &kp BACKSLASH   &kp PIPE  &kp SLASH  &trans                   &trans      &trans  &kp LEFT_CONTROL  &trans  &trans  &kp RIGHT_CONTROL   &trans     &trans          &trans          &trans        &trans           &trans      &trans           &trans
-         &trans  &trans          &trans     &trans     &trans                    &kp BACKSPACE   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE                          &trans        &trans           &trans      &trans           &trans
+  &none   &none   &none   &none   &none   &none                    &none                                                                                &none           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none   &none                    &none                                                                                &none           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none   &none                    &none  &kp DELETE      &kp LEFT_ALT  &trans  &trans      &kp RIGHT_ALT    &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE   &none
+  &none   &none   &none   &none   &none   &none                   &trans      &trans  &kp LEFT_CONTROL  &trans  &trans  &kp RIGHT_CONTROL   &trans     &trans           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none                    &kp BACKSPACE   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE                           &none         &none            &none       &none   &none
             >;
         };
 
