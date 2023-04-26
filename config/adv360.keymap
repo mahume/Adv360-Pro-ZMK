@@ -89,11 +89,11 @@
 
         layer_Layer__5 {
             bindings = <
-  &none   &none   &none   &none   &none   &none                    &none                                                           &none           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none   &none                    &none                                                           &none           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none   &none                    &none  &kp DELETE   &none  &trans  &trans   &none    &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE   &none
-  &none   &none   &none   &none   &none   &none                   &trans      &trans   &none  &trans  &trans   &none   &trans     &trans           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none                    &kp BACKSPACE   &kp ENTER   &none                   &none  &kp TAB  &kp SPACE                           &none         &none            &none       &none   &none
+  &none             &none   &none         &none             &none   &none                    &none                                                           &none           &none              &none          &none            &none              &none   &none
+  &none             &none   &none         &none             &none   &none                    &none                                                           &none           &none              &none          &none            &none              &none   &none
+  &none             &none   &none         &none             &none   &none                    &none  &kp DELETE   &none  &trans  &trans   &none    &none      &none  &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW         &kp ESCAPE   &none
+  &none             &none   &none         &none             &none   &none                   &trans      &trans   &none  &trans  &trans   &none   &trans     &trans           &none              &none          &none            &none              &none   &none
+  &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                    &kp BACKSPACE   &kp ENTER   &none                   &none  &kp TAB  &kp SPACE                  &kp RIGHT_COMMAND  &kp RIGHT_ALT            &none  &kp RIGHT_CONTROL   &none
             >;
         };
 
