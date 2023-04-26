@@ -18,9 +18,21 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
 / {
   behaviors {
     #include "macros.dtsi"
+    
+    as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTO_SHIFT";
+        #binding-cells = <2>;
+        tapping_term_ms = <135>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -40,9 +52,9 @@
         default_layer {
             bindings = <
   &none             &none   &none         &none             &none   &none               &mo 2                                                           &mo 3   &none              &none          &none    &none              &none      &none
-  &none             &kp Q   &kp D         &kp R             &kp W   &kp B            &kp CAPS                                                           &none   &kp J              &kp F          &kp U    &kp P   &kp SINGLE_QUOTE  &kp GRAVE
-  &mo 4             &kp A   &kp S         &kp H             &kp T   &kp G               &none  &kp DELETE   &none   &none   &none   &none    &none      &none   &kp Y              &kp N          &kp E    &kp O              &kp I      &mo 4
-  &mo 1             &kp Z   &kp X         &kp M             &kp C   &kp V               &none       &none   &none   &none   &none   &none    &none      &none   &kp K              &kp L      &kp COMMA  &kp DOT       &kp QUESTION      &mo 1
+  &none             AS(Q)   AS(D)         AS(R)             AS(W)   AS(B)            &kp CAPS                                                           &none   AS(J)              AS(F)          AS(U)    AS(P)   AS(SINGLE_QUOTE)  &kp GRAVE
+  &mo 4             AS(A)   AS(S)         AS(H)             AS(T)   AS(G)               &none  &kp DELETE   &none   &none   &none   &none    &none      &none   AS(Y)              AS(N)          AS(E)    AS(O)              AS(I)      &mo 4
+  &mo 1             AS(Z)   AS(X)         AS(M)             AS(C)   AS(V)               &none       &none   &none   &none   &none   &none    &none      &none   AS(K)              AS(L)      &kp COMMA  &kp DOT       &kp QUESTION      &mo 1
   &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                    &kp BSPC   &kp ENTER   &mo 5                   &mo 1  &kp TAB  &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL      &none
             >;
         };
