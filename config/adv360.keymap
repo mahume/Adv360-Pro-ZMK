@@ -49,11 +49,11 @@
 
         layer_keypad {
             bindings = <
-  &none            &none            &none            &none            &none            &none              &trans                                                           &mo 3            &none            &none            &none            &none            &none   &none
-  &none            &none         &kp PLUS        &kp MINUS            &none            &none               &none                                                           &none            &none            &none     &kp ASTERISK     &kp KP_SLASH            &none   &none
-  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5               &none  &kp DELETE   &none   &none   &none   &none    &none      &none  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0   &none
-  &none            &none            &none         &kp HASH       &kp DOLLAR            &none               &none       &none   &none   &none   &none   &none    &none      &none            &none      &kp PERCENT            &none            &none            &none   &none
-  &none            &none            &none            &none            &none                             &kp BSPC   &kp ENTER   &none                   &none  &kp TAB  &kp SPACE                         &kp KP_N0            &none       &kp KP_DOT            &none   &none
+  &none             &none            &none            &none             &none            &none              &trans                                                           &mo 3            &none              &none            &none            &none              &none   &none
+  &none             &none         &kp PLUS        &kp MINUS             &none            &none               &none                                                           &none            &none              &none     &kp ASTERISK     &kp KP_SLASH              &none   &none
+  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp KP_NUMBER_4  &kp KP_NUMBER_5               &none  &kp DELETE   &none   &none   &none   &none    &none      &none  &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp KP_NUMBER_0   &none
+  &none             &none            &none         &kp HASH        &kp DOLLAR            &none               &none       &none   &none   &none   &none   &none    &none      &none            &none        &kp PERCENT            &none            &none              &none   &none
+  &none  &kp LEFT_CONTROL            &none     &kp LEFT_ALT  &kp LEFT_COMMAND                             &kp BSPC   &kp ENTER   &mo 5                   &none  &kp TAB  &kp SPACE                   &kp RIGHT_COMMAND    &kp RIGHT_ALT            &none  &kp RIGHT_CONTROL   &none
             >;
         };
 
@@ -79,21 +79,21 @@
 
         layer_Layer__4 {
             bindings = <
-  &none      &none                 &none           &none             &none          &none                    &none                                                                                &none             &none              &none            &none                  &none         &none   &none
-  &none      &none        &kp UNDERSCORE       &kp MINUS         &kp TILDE          &none                    &none                                                                                &none             &none      &kp BACKSLASH         &kp PIPE              &kp SLASH         &none   &none
-  &none  &kp CARET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LESS_THAN                    &none  &kp DELETE      &kp LEFT_ALT  &trans  &trans      &kp RIGHT_ALT    &none      &none  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL   &none
-  &none      &none                 &none     &kp AT_SIGN         &kp COLON          &none                   &trans      &trans  &kp LEFT_CONTROL  &trans  &trans  &kp RIGHT_CONTROL   &trans     &trans             &none      &kp SEMICOLON    &kp AMPERSAND                  &none         &none   &none
-  &none      &none                 &none           &none             &none                           &kp BACKSPACE   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE                                &none            &none                  &none         &none   &none
+  &none             &none                 &none           &none             &none          &none                    &none                                                           &none             &none              &none            &none                  &none              &none   &none
+  &none             &none        &kp UNDERSCORE       &kp MINUS         &kp TILDE          &none                    &none                                                           &none             &none      &kp BACKSLASH         &kp PIPE              &kp SLASH              &none   &none
+  &none         &kp CARET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LESS_THAN                    &none  &kp DELETE   &none  &trans  &trans   &none    &none      &none  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS       &kp KP_EQUAL   &none
+  &none             &none                 &none     &kp AT_SIGN         &kp COLON          &none                   &trans      &trans   &none  &trans  &trans   &none   &trans     &trans             &none      &kp SEMICOLON    &kp AMPERSAND                  &none              &none   &none
+  &none  &kp LEFT_CONTROL                 &none    &kp LEFT_ALT  &kp LEFT_COMMAND                           &kp BACKSPACE   &kp ENTER   &mo 5                   &none  &kp TAB  &kp SPACE                    &kp RIGHT_COMMAND    &kp RIGHT_ALT                  &none  &kp RIGHT_CONTROL   &none
             >;
         };
 
         layer_Layer__5 {
             bindings = <
-  &none   &none   &none   &none   &none   &none                    &none                                                                                &none           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none   &none                    &none                                                                                &none           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none   &none                    &none  &kp DELETE      &kp LEFT_ALT  &trans  &trans      &kp RIGHT_ALT    &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE   &none
-  &none   &none   &none   &none   &none   &none                   &trans      &trans  &kp LEFT_CONTROL  &trans  &trans  &kp RIGHT_CONTROL   &trans     &trans           &none           &none         &none            &none       &none   &none
-  &none   &none   &none   &none   &none                    &kp BACKSPACE   &kp ENTER  &kp LEFT_COMMAND                  &kp RIGHT_COMMAND  &kp TAB  &kp SPACE                           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none   &none                    &none                                                           &none           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none   &none                    &none                                                           &none           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none   &none                    &none  &kp DELETE   &none  &trans  &trans   &none    &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE   &none
+  &none   &none   &none   &none   &none   &none                   &trans      &trans   &none  &trans  &trans   &none   &trans     &trans           &none           &none         &none            &none       &none   &none
+  &none   &none   &none   &none   &none                    &kp BACKSPACE   &kp ENTER   &none                   &none  &kp TAB  &kp SPACE                           &none         &none            &none       &none   &none
             >;
         };
 
