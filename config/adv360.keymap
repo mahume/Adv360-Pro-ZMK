@@ -54,8 +54,8 @@
   &none             &none   &none         &none             &none   &none               &mo 2                                                           &mo 3   &none              &none          &none    &none              &none      &none
   &none             AS(Q)   AS(D)         AS(R)             AS(W)   AS(B)            &kp CAPS                                                           &none   AS(J)              AS(F)          AS(U)    AS(P)   AS(SINGLE_QUOTE)  &kp GRAVE
   &mo 4             AS(A)   AS(S)         AS(H)             AS(T)   AS(G)               &none  &kp DELETE   &none   &none   &none   &none    &none      &none   AS(Y)              AS(N)          AS(E)    AS(O)              AS(I)      &mo 4
-  &mo 2             AS(Z)   AS(X)         AS(M)             AS(C)   AS(V)               &none       &none   &none   &none   &none   &none    &none      &none   AS(K)              AS(L)      &kp COMMA  &kp DOT       &kp QUESTION      &mo 2
-  &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                    &kp BSPC   &kp ENTER   &mo 5                   &mo 2  &kp TAB  &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL      &none
+  &mo 1             AS(Z)   AS(X)         AS(M)             AS(C)   AS(V)               &none       &none   &none   &none   &none   &none    &none      &none   AS(K)              AS(L)      &kp COMMA  &kp DOT       &kp QUESTION      &mo 1
+  &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                    &kp BSPC   &kp ENTER   &mo 5                   &mo 1  &kp TAB  &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL      &none
             >;
         };
 
