@@ -18,9 +18,21 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
 / {
   behaviors {
     #include "macros.dtsi"
+
+    as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTO_SHIFT";
+        #binding-cells = <2>;
+        tapping_term_ms = <175>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -40,9 +52,9 @@
         default_layer {
             bindings = <
      &none             &none   &none         &none             &none   &none                     &mo 2                                                                 &mo 3   &none              &none          &none    &none              &none             &none
- &kp GRAVE             &kp Q   &kp W         &kp E             &kp R   &kp T                  &kp CAPS                                                                 &none   &kp Y              &kp U          &kp I    &kp O              &kp P  &kp SINGLE_QUOTE
-     &mo 4             &kp A   &kp S         &kp D             &kp F   &kp G            &kp LEFT_SHIFT  &kp DELETE   &none   &none   &none   &none    &none  &kp RIGHT_SHIFT   &kp H              &kp J          &kp K    &kp L      &kp SEMICOLON             &mo 4
-     &mo 1             &kp Z   &kp X         &kp C             &kp V   &kp B                     &none       &none   &none   &none   &none   &none    &none            &none   &kp N              &kp M      &kp COMMA  &kp DOT       &kp QUESTION             &mo 1
+  AS(GRAVE)            AS(Q)   AS(W)         AS(E)             AS(R)   AS(T)                  &kp CAPS                                                                 &none   AS(Y)              AS(U)          AS(I)    AS(O)              AS(P)   AS(SINGLE_QUOTE)
+     &mo 4             AS(A)   AS(S)         AS(D)             AS(F)   AS(G)            &kp LEFT_SHIFT  &kp DELETE   &none   &none   &none   &none    &none  &kp RIGHT_SHIFT   AS(H)              AS(J)          AS(K)    AS(L)      &kp SEMICOLON             &mo 4
+     &mo 1             AS(Z)   AS(X)         AS(C)             AS(V)   AS(B)                     &none       &none   &none   &none   &none   &none    &none            &none   AS(N)              AS(M)      &kp COMMA  &kp DOT       &kp QUESTION             &mo 1
      &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                          &kp BSPC   &kp ENTER   &mo 5                   &mo 1  &kp TAB        &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL             &none
             >;
         };
