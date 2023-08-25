@@ -53,7 +53,7 @@
             bindings = <
      &none             &none   &none         &none             &none   &none                     &mo 2                                                                 &mo 3   &none              &none          &none    &none              &none             &none
   AS(GRAVE)            AS(Q)   AS(W)         AS(E)             AS(R)   AS(T)                  &kp CAPS                                                                 &none   AS(Y)              AS(U)          AS(I)    AS(O)              AS(P)   AS(SINGLE_QUOTE)
-     &mo 4             AS(A)   AS(S)         AS(D)             AS(F)   AS(G)            &kp LEFT_SHIFT  &kp DELETE   &none   &none   &none   &none    &none  &kp RIGHT_SHIFT   AS(H)              AS(J)          AS(K)    AS(L)      &kp SEMICOLON             &mo 4
+     &mo 4             AS(A)   AS(S)         AS(D)             AS(F)   AS(G)            &kp LEFT_SHIFT  &kp DELETE   &none   &none   &none   &none    &none  &kp RIGHT_SHIFT   AS(H)              AS(J)          AS(K)    AS(L)       AS(SEMICOLON)            &mo 4
      &mo 1             AS(Z)   AS(X)         AS(C)             AS(V)   AS(B)                     &none       &none   &none   &none   &none   &none    &none            &none   AS(N)              AS(M)      &kp COMMA  &kp DOT       &kp QUESTION             &mo 1
      &none  &kp LEFT_CONTROL   &none  &kp LEFT_ALT  &kp LEFT_COMMAND                          &kp BSPC   &kp ENTER   &mo 5                   &mo 1  &kp TAB        &kp SPACE          &kp RIGHT_COMMAND  &kp RIGHT_ALT    &none  &kp RIGHT_CONTROL             &none
             >;
