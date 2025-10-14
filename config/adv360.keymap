@@ -27,7 +27,7 @@
         Alpha {
             display-name = "Base";
             bindings = <
-&none       &none        &none       &none       &none        &none  &none                                               &none      &none  &none        &none       &none       &none           &none
+&none       &none        &none       &none       &none        &none  &none                                               &mo 5      &none  &none        &none       &none       &none           &none
 &none       &kp Q        &kp W       &kp E       &kp R        &kp T  &none                                               &none      &kp Y  &kp U        &kp I       &kp O       &kp P           &none
 &kp ESCAPE  &hm LSHFT A  &hm LALT S  &hm LGUI D  &hm LCTRL F  &kp G  &none     &kp DELETE  &none      &kp CAPS  &none    &none      &kp H  &hm RCTRL J  &hm RGUI K  &hm RALT L  &hm RSHFT SEMI  &kp SINGLE_QUOTE
 &none       &kp Z        &kp X       &kp C       &kp V        &kp B                        &none      &none                         &kp N  &kp M        &kp COMMA   &kp DOT     &kp FSLH        &none
